@@ -12,9 +12,16 @@ const showNotification = ()=>{
 }
 
 
+const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+document.body.classList.toggle("dark", isDarkMode);
+checkbox.checked = isDarkMode;
+
 checkbox.addEventListener("change", () => {
-    document.body.classList.toggle("dark")
-})
+  const isDarkMode = checkbox.checked;
+  document.body.classList.toggle("dark", isDarkMode);
+  localStorage.setItem("darkMode", isDarkMode);
+});
 
 document.addEventListener("DOMContentLoaded", ()=>{
     showNotification();
