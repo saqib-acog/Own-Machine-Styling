@@ -1,0 +1,353 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+body {
+    position: relative;
+    background-color: rgb(248, 249, 251);
+    color: #354766;
+    overflow-x: hidden;
+}
+
+section {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 27px 0 rgba(0,0,0,.05);
+  margin: 4rem;
+}
+
+.toast {
+  text-align: left;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  border-radius: 4px;
+  max-width: 500px;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: -100%;
+  margin-top: 1.5rem;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+.toast.active {
+  top: 0;
+}
+
+.toast:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #2bde3f;
+}
+
+.toast__icon {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #2bde3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toast__icon .gg-check {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: normal;
+}
+
+.toast__content {
+  padding: 0 2rem;
+}
+.toast__type {
+  color: #3e3e3e;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.toast__message {
+  font-size: 14px;
+  color: #878787;
+  font-size: 1.3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+.navbar h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #525252;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon,
+.fa-sun {
+  color: #f1c40f;
+  font-size: 1.5rem;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 20px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.all-containers{
+    padding: 2rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.all-containers h2{
+    font-size: 3.2rem;
+    color:#3e3e3e;    
+    margin: 1rem 0;
+}
+.all-containers p{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.filter-container{
+    display: flex;
+}
+
+.filter-text{
+    font-size: medium;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+.ported-filter, .non-ported-filter{
+    display: inline-flex;
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 1rem;
+    user-select: none;
+}
+.ported-filter input, .non-ported-filter input{
+    margin-right: 5px ;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 40px;
+    font-size: 1.8rem;
+    color: #80848d;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 1.5rem;
+    text-align: left;
+    min-width: 15vw;
+    font-weight: 600;
+}
+table tbody tr{
+    border-top: 1px solid #edececd5;
+}
+table tbody tr td{
+    font-size: 1.5rem;
+}
+table tbody tr td a{
+    text-decoration: none;
+}
+table tbody tr td a:hover{
+    text-decoration: underline;
+}
+.wrap-column{
+    word-wrap: break-word;
+}
+
+tbody tr td:nth-child(2){
+    color: green;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(246 236 217 / 7%);
+}
+
+.static-servers{
+    padding: 2rem;
+}
+
+.static-servers h3{
+    font-size: 3.2rem;
+    color:#3e3e3e;    
+    margin: 1rem 0;
+}
+.static-servers p{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+
+
+.dev-info {
+    padding: 3rem;
+}
+
+.dev-info h2{
+    font-size: 3.2rem;
+    color:#3e3e3e;    
+    margin: 1rem 0;
+}
+.dev-info h3{
+    font-size: 2rem;
+    color:#3e3e3e;    
+    margin: 1rem 0;
+}
+.dev-info ol{
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+}
+.dev-info code{
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.card-hint{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: #141b1f;
+    font-weight: 600;
+
+}
+.card-hint p{
+    font-size: 2rem;
+    color:#3e3e3e;    
+    margin: 1rem 0;
+    font-weight: bold;
+    color: green;
+}
+
+.footer{
+    padding: 1.5rem;
+    text-align: center;
+    font-size: small;
+}
+
+
+/* Dark theme */
+
+body.dark {
+  background-color: #0d1017;
+}
+
+body.dark .toast{
+    background-color: #21272d ;
+}
+body.dark .toast .toast__type, body.dark .toast .toast__message{
+    color: whitesmoke;
+}
+
+body.dark .navbar h1{
+    color: whitesmoke;
+}
+body.dark section {
+    background-color: #161b21;
+    box-shadow: 0 20px 27px 0 rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.699);
+  }
+
+body.dark table tbody tr{
+    border-top: 0.1px solid #272727;
+}
+body.dark table tbody tr:nth-child(even){
+    background-color: rgb(85 81 74 / 8%);
+}
+body.dark section h2, body.dark section h3{
+    color: rgba(255, 255, 255, 0.725);
+}
+body.dark .dev-info code{
+    background-color: rgba(0, 0, 0, 0.368);
+   color: whitesmoke;
+}
+body.dark .card-hint{
+    color: #141b1f;
+    font-weight: 500;
+
+}
+body.dark .card-hint ol li{
+    color: rgba(255, 255, 255, 0.725);    
+}
+body.dark .footer-hr{
+    background-color: #141b1f;
+    height: 3px;
+    border: none;
+}
+
+body.dark .footer {
+    color: whitesmoke;
+}

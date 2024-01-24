@@ -1,0 +1,171 @@
+
+@media (max-width: 800px) {
+
+    section {
+        margin: 3rem;
+      }
+      .navbar {
+        padding: 3rem;
+      }
+      .all-containers h2{
+        font-size: 2.8rem;   
+    }
+    .all-containers p{
+        font-size: 1.6rem;
+    }
+    .filter-text, .ported-filter, .non-ported-filter{
+        font-size: small;
+    }
+
+
+thead th {
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+td, th {
+    padding: 1rem;
+}
+table tbody tr td{
+    font-size: 1.2rem;
+}
+
+.static-servers h3{
+    font-size: 2.8rem;
+}
+.static-servers p{
+    font-size: 1.6rem;
+}
+.dev-info h2{
+    font-size: 2.8rem;
+}
+.dev-info h3{
+    font-size: 1.8rem;
+    color:#3e3e3e;    
+    margin: 1rem 0;
+}
+.dev-info ol{
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.card-hint{
+    font-size: 1.2rem;
+}
+.card-hint p{
+    font-size: 1.8rem;
+}
+
+}
+
+
+@media (max-width: 500px) {
+
+
+    .toast {
+        padding: 1rem 3rem;
+        width: 70vw;
+      }
+      .toast__icon .gg-check {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: normal;
+      }
+      
+      .toast__type {
+        margin-bottom: 2px;
+        font-size: 1.6rem;
+      }
+      
+      .toast__message {
+        font-size: 1.1rem;
+      }
+
+    .navbar h1 {
+        font-size: 2rem;
+      }
+      .checkbox-label {
+        background-color: #111;
+        width: 45px;
+        height: 20px;
+        border-radius: 50px;
+        padding: 5px;
+      }
+      
+      .fa-moon,
+      .fa-sun {
+      font-size: 1.2rem;
+      }
+      
+      .checkbox-label .ball {
+        width: 15.5px;
+        top: 2px;
+      }   
+
+    section {
+        margin: 1rem 0.5rem;
+        border-radius: 1rem;
+      }
+      .navbar {
+        padding: 1.5rem;
+      }
+      .all-containers{
+        padding: 1.5rem;
+      }
+      .all-containers h2{
+        font-size: 2.2rem; 
+    }
+    .all-containers p{
+        font-size: 1.2rem;
+    }
+    .filter-text, .ported-filter, .non-ported-filter{
+        font-size: small;
+    }
+
+
+thead th {
+    height: 20px;
+    font-size: 1.2rem;
+}
+
+td, th {
+    padding: 0.7rem;
+}
+table tbody tr td{
+    font-size: 1rem;
+}
+.static-servers{
+    padding: 1.5rem;
+}
+.static-servers h3{
+    font-size: 2.2rem;
+}
+.static-servers p{
+    font-size: 1.2rem;
+}
+.dev-info {
+    padding: 2rem;
+}
+.dev-info h2{
+    font-size: 2rem;
+}
+.dev-info h3{
+    font-size: 1.5rem;   
+    margin: 0.8rem 0;
+}
+.dev-info ol{
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+.card-hint{
+    font-size: 1.2rem;
+}
+.card-hint p{
+    font-size: 1.5rem;
+}
+.footer{
+    font-size: 1rem;
+}
+
+}
